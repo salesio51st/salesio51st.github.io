@@ -32,7 +32,3 @@ PATHS:
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
-    - "src/assets/js/isotope.pkgd.js"
-    - "bower_components/jquery/dist/jquery.min.js"
-    - "bower_components/isotope/dist/isotope.pkgd.min.js"
-    - "bower_components/swiper/dist/js/swiper.jquery.min.js"
