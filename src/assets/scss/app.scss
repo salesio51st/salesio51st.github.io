@@ -244,7 +244,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 .is-checked{
 	background-color: $main;
 }
-.grid:after {
+#grid:after {
   content: '';
   display: block;
   clear: both;
