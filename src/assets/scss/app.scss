@@ -187,3 +187,72 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	text-align: center;
 	font-weight: 700;
 }
+.grid-item{
+	margin: 1rem;
+	padding: 0.5rem;
+	width: 150px;
+	height: 150px;
+	border-radius: 3px;
+	// box-shadow:7px 7px 0px 0px $main;
+	border: 3px solid black;
+	float: left;
+	position: relative;
+	img{
+		margin-bottom: 0.3rem;
+	}
+	.labo{
+		font-size: 0.7rem;
+		margin-bottom: 0;
+	}
+	.wlabo{
+		display: none;
+	}
+	.wname2{
+		font-weight: 700;
+		font-size: 1rem;
+		position: absolute;
+		bottom: 0.2rem;
+	}
+	.wname{
+		display: none;
+	}
+	.wcate{
+		position: absolute;
+		padding: 0 0.2rem;
+		top: 0.5rem;
+		right: 0.5rem;
+		background-color: yellow;
+		font-size: 0.6rem;
+		font-weight: 700;
+	}
+}
+.button-group{
+	button{
+		font-weight: 700;
+		border: 3px solid black;
+		padding: 3px;
+		margin: -1.5px;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		&:hover{
+			background-color: $main;
+		}
+	}
+
+}
+
+.is-checked{
+	background-color: $main;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item > * {
+  margin: 0;
+  padding: 0;
+}
+#schedule{
+	background-color: $main;
+}

@@ -27,6 +27,12 @@ PATHS:
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
-  # Paths to JavaScript entry points for webpack to bundle modules
-  entries:
+  # Paths to JavaScript libraries, which are combined into one file
+  javascript:
+    # Paths to your own project code are here
+    - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
+    - "src/assets/js/isotope.pkgd.js"
+    - "bower_components/jquery/dist/jquery.min.js"
+    - "bower_components/isotope/dist/isotope.pkgd.min.js"
+    - "bower_components/swiper/dist/js/swiper.jquery.min.js"
