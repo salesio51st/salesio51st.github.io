@@ -205,7 +205,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	float: left;
 	position: relative;
 	cursor: pointer;
-	transition: all 0.3s ease;
+	transition: box-shadow 0.3s ease;
 	&:hover{
 		box-shadow:7px 7px 0px 0px $main;
 	}
