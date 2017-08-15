@@ -308,11 +308,23 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 		font-weight: 700;
 		font-style: italic;
 		font-size: 1.5rem;
+		margin-bottom: -5px;
+	}
+	a{
+		color: black;
+		display: block;
+		margin-bottom: 5px;
 	}
 	.share{
-		.twitter-share-button{
-			color: black;
-			
+		background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, $main 50%);
+  		background-position: 0 0;
+  		background-size: 200% auto;
+		border: 2px solid black;
+		text-align: center;
+		font-weight: bold;
+		transition: all 0.5s ease;
+		&:hover{
+			background-position: -100% 0;
 		}
 	}
 }
