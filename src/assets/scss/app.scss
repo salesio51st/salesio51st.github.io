@@ -266,7 +266,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	background-color: $main;
 	margin-bottom: 1rem;
 	img{
-		padding: 1rem 2rem;
+		padding: 1rem 1rem;
 	}
 }
 .futo{
@@ -324,6 +324,9 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 			background-position: -100% 0;
 		}
 	}
+}
+#skipcon4{
+	margin-bottom: 0px;
 }
 #abeP{
 	background-image: url("../img/patterns/abe.png");
