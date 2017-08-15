@@ -56,13 +56,6 @@ $main: yellow;
 $maineg: 'neue kabel';
 $mainjp: 'FOT-ロダンNTLG Pro';
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-
 #footer{
 	background-color: $main;
 	text-align: center;
@@ -89,6 +82,10 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	transition: all 0.4s ease;
 	background-color: rgba(255, 255, 0, 0);
 	font-weight: 600;
+	img{
+		height: 1.4rem;
+		transform: scale(1.2);
+	}
 	&:hover{
 		background-color: $main;
 		color: black;
