@@ -252,6 +252,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	.labo{
 		font-size: 0.7rem;
 		margin-bottom: 0;
+		background-color: rgba(255,255,255,0.7);
 	}
 	.wlabo{
 		display: none;
@@ -262,6 +263,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 		font-size: 1rem;
 		position: absolute;
 		bottom: 0.2rem;
+		background-color: white;
 	}
 	.wname{
 		display: none;
@@ -334,10 +336,11 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 .ownpat{
 	padding-left: 0.3rem;
 	margin-top: 1rem;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
 	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
 	font-weight: 700;
+	text-shadow: 0px 3px 7px rgba(0,0,0,0.5);
 }
 #sharefloat{
 	width: 8rem;
@@ -374,6 +377,10 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 #skipcon4{
 	margin-bottom: 0px;
 }
-#abeP{
-	background-image: url("../img/patterns/abe.png");
+.abeP{
+	background-image: url("../img/patterns/2.jpg");
+}
+.andoP{
+	background-image: url("../img/pattern/3.jpg");
+	background-size: cover;
 }
