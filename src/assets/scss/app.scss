@@ -98,7 +98,12 @@ $mainjp: 'UD新ゴNT L';
         src:url("../fonts/04591642-8468-4ce6-a107-b13873690913.eot?#iefix") format("eot"),url("../fonts/545b926c-cffd-402b-8dc9-50ae1170f4c0.woff2") format("woff2"),url("../fonts/d359e623-8f01-4e2e-81bc-6898b967fc55.woff") format("woff"),url("../fonts/9a76034d-a263-4c9a-8c8b-f65559cba999.ttf") format("truetype"),url("../fonts/13272c6e-3d6d-4bb1-80c0-cf36f538fb72.svg#13272c6e-3d6d-4bb1-80c0-cf36f538fb72") format("svg");
     }
 
-
+.sat{
+	color: #108B96;
+}
+.sun{
+	color: #D24D8A;
+}
 #footer{
 	background-color: $main;
 	text-align: center;
@@ -115,24 +120,52 @@ $mainjp: 'UD新ゴNT L';
 	opacity: 0.9;
 	font-family: "Metro Nova Thin", $mainjp, sans-serif;
 	font-weight: 700;
-	transition: all 0.4s ease;
+	transition: all 0.4s ease;position: relative;
+	  display: inline-block;
+	&::after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  content: '';
+	  width: 0;
+	  height: 1px;
+	  background-color: black;
+	  transition: .3s;
+	}
+	&:hover::after {
+	  width: 100%;
+	}
 	&:hover{
-		background-color: $main;
 		color: black;
+		transform: rotate(-10deg);
 	}
 }
 .topmenu{
 	color: black;
 	font-size: 1.5rem;
 	transition: all 0.4s ease;
-	background-color: rgba(255, 255, 0, 0);
 	font-family: "Metro Nova light", $mainjp, sans-serif;
+	position: relative;
+	  display: inline-block;
+	&::after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  content: '';
+	  width: 0;
+	  height: 1px;
+	  background-color: black;
+	  transition: .3s;
+	}
+	&:hover::after {
+	  width: 100%;
+	}
 	img{
 		height: 1.4rem;
 		transform: scale(1.2);
 	}
 	&:hover{
-		background-color: $main;
+		transform: rotate(-10deg);
 		color: black;
 	}
 }
@@ -140,39 +173,44 @@ $mainjp: 'UD新ゴNT L';
 	margin-top: 5rem;
 	text-align: left;
 	margin-bottom: 2rem;
-	h3{
+	h6{
 		font-family: "Metro Nova bold", sans-serif;
 		font-weight: 600;
+		font-size: 1.3em;
 	}
 	h5{
-		margin-bottom: -0.5rem;
+		margin-bottom: -0.9rem;
+		font-size: 1.3em;
+		letter-spacing: 0.5px;
 	}
 	h1, h5{
 		font-family: $mainjp, sans-serif;
 	}
 	h1{
-		font-family: "Metro Nova Thin", "UD新ゴNT EL", sans-serif;
+		font-family: "Metro Nova Thin", "新ゴ EL", sans-serif;
 		font-weight: 100;
 		font-size: 4rem;
-		margin-bottom: -1rem;
+		margin-bottom: 0rem;
 	}
 	h4{
 		font-family: "Metro Nova Thin", $mainjp, sans-serif;
 		font-weight: 100;
 		font-size: 2.5rem;
+		margin-bottom: 1rem;
 	}
 }
 .days{
 	text-align: center;
-	margin-top: 2rem;
+	margin-top: 5rem;
 	font-family: $maineg, $mainjp, sans-serif;
 	margin-bottom: 1rem;
+	bottom: 0;
 	p{
 		font-size: 1.5rem;
-		margin-bottom: -5rem;
+		margin-bottom: -4.5rem;
 	}
 	.huto{
-		font-family: "Metro Nova bold", "UD新ゴNT B", sans-serif;
+		font-family: "Metro Nova bold", "UD新ゴNT DB", sans-serif;
 		font-weight: 700;
 	}
 }
@@ -246,7 +284,7 @@ $mainjp: 'UD新ゴNT L';
 }
 .catch{
 	text-align: center;
-	font-family: "Metro Nova Bold", "UD新ゴNT B", sans-serif;
+	font-family: "Metro Nova Bold", "UD新ゴNT DB", sans-serif;
 	font-weight: 700;
 }
 .grid-item{
@@ -265,7 +303,9 @@ $mainjp: 'UD新ゴNT L';
 		margin-bottom: 0.3rem;
 	}
 	.labo{
-		font-family: "UD新ゴNT B", sans-serif;
+		padding-left: 1px;
+		padding-right: 1px;
+		font-family: "UD新ゴNT DB", sans-serif;
 		font-weight: 700;
 		font-size: 0.7rem;
 		margin-bottom: 0;
@@ -281,6 +321,7 @@ $mainjp: 'UD新ゴNT L';
 		position: absolute;
 		bottom: 0.2rem;
 		background-color: white;
+		padding: 0 3px;
 	}
 	.wname{
 		display: none;
@@ -347,19 +388,33 @@ $mainjp: 'UD新ゴNT L';
 	}
 }
 .futo{
-	font-family: "Metro Nova Bold", $mainjp, sans-serif;
+	font-family: "Metro Nova Bold", "UD新ゴNT DB", sans-serif;
 	font-weight: 700;
 }
 .linkline{
 	color: black;
 	transition: all 0.5s ease;
 	padding: 0 .1em;
-  background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, $main 50%);
-  background-position: 0 0;
-  background-size: 200% auto;
+  // background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, $main 50%);
+  // 	background-position: 0 0;
+  // 	background-size: 200% auto;
+  	position: relative;
+	display: inline-block;
+	&::after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  content: '';
+	  width: 0;
+	  height: 1px;
+	  background-color: #555;
+	  transition: 0.5s all ease;
+	}
+	&:hover::after{
+	  width: 100%;
+	}
 	&:hover{
 		color: black;
-		background-position: -100% 0;
 	}
 }
 .detail{
