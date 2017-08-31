@@ -52,35 +52,50 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-$main: yellow;
-$maineg: 'Neue Kabel W01 Book';
-$mainjp: 'FOT-ロダンNTLG Pro';
+$main: #F7F8F8;
+$maineg: 'Metro Nova Light';
+$mainjp: 'UD新ゴNT L';
 
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=e26fd573-3daa-4f5a-bf10-2a53604d3fbb");
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=17c219ed-5ca4-41c4-9d54-921bb83159e9");
     @font-face{
-        font-family:"Neue Kabel W01 Light";
-        src:url("../fonts/b327b97f-69db-457a-9b68-0e0e171488a8.eot?#iefix");
-        src:url("../fonts/b327b97f-69db-457a-9b68-0e0e171488a8.eot?#iefix") format("eot"),url("../fonts/bf2d8f16-6bf7-4198-9c5c-4047935777a1.woff2") format("woff2"),url("../fonts/d54cbb3d-92c4-4023-b754-02453faa009b.woff") format("woff"),url("../fonts/64587986-16a7-4722-a78a-a2178b167c0d.ttf") format("truetype"),url("../fonts/07ae441f-e2bd-4231-9085-6c1b26b745c2.svg#07ae441f-e2bd-4231-9085-6c1b26b745c2") format("svg");
+        font-family:"Metro Nova Thin";
+        src:url("../fonts/a1228df2-5d8b-4a34-809e-08219f941169.eot?#iefix");
+        src:url("../fonts/a1228df2-5d8b-4a34-809e-08219f941169.eot?#iefix") format("eot"),url("../fonts/663aa05c-9750-48e6-8f11-eaa581da0e96.woff2") format("woff2"),url("../fonts/deff9a37-cf08-4f76-9691-611e3c7ee698.woff") format("woff"),url("../fonts/12c73bb4-900d-47c8-a4c2-cda2737e0100.ttf") format("truetype"),url("../fonts/c49bde8d-013a-4163-96b9-c326588d35e4.svg#c49bde8d-013a-4163-96b9-c326588d35e4") format("svg");
     }
     @font-face{
-        font-family:"Neue Kabel W01 Regular";
-        src:url("../fonts/55df1b3c-bb6e-4d23-83df-1e359fa7432e.eot?#iefix");
-        src:url("../fonts/55df1b3c-bb6e-4d23-83df-1e359fa7432e.eot?#iefix") format("eot"),url("../fonts/3ff31f52-477c-4730-9805-0fb9f23a1227.woff2") format("woff2"),url("../fonts/bd9f7fa5-44d9-4573-bd02-7f9d846b48ad.woff") format("woff"),url("../fonts/623165f4-a767-4d8b-ab7b-33b2bf22a83e.ttf") format("truetype"),url("../fonts/40358c16-5df0-4e1f-b4e9-4d218c5d62a6.svg#40358c16-5df0-4e1f-b4e9-4d218c5d62a6") format("svg");
+        font-family:"Metro Nova ThinItalic";
+        src:url("../fonts/dec63979-f615-4ef6-ae1f-cff3c6c81a6f.eot?#iefix");
+        src:url("../fonts/dec63979-f615-4ef6-ae1f-cff3c6c81a6f.eot?#iefix") format("eot"),url("../fonts/ffbfe75c-02e9-48f2-ab6c-2475302a0a66.woff2") format("woff2"),url("../fonts/15097fe3-0ee1-49bd-b404-ed568185b477.woff") format("woff"),url("../fonts/e5df961c-d814-48ad-9b31-86d29bc92af0.ttf") format("truetype"),url("../fonts/3c324bd8-21c7-41db-b257-028bf470f590.svg#3c324bd8-21c7-41db-b257-028bf470f590") format("svg");
     }
     @font-face{
-        font-family:"Neue Kabel W01 Book";
-        src:url("../fonts/17d87344-9ef5-48c1-8f1a-5210e0fea5eb.eot?#iefix");
-        src:url("../fonts/17d87344-9ef5-48c1-8f1a-5210e0fea5eb.eot?#iefix") format("eot"),url("../fonts/c2327bbe-b103-4a28-96d4-7069aea07a41.woff2") format("woff2"),url("../fonts/a566974f-8eff-4e50-a5b2-0e2a35ed192e.woff") format("woff"),url("../fonts/5fc0eb6f-2f28-4b50-8fc2-4e544a897ed5.ttf") format("truetype"),url("../fonts/3a8b9c13-2347-45ee-b6b1-35bc60d8a0a7.svg#3a8b9c13-2347-45ee-b6b1-35bc60d8a0a7") format("svg");
+        font-family:"Metro Nova Light";
+        src:url("../fonts/7f7b00f0-b518-4bd6-8d88-9d5c29c2e928.eot?#iefix");
+        src:url("../fonts/7f7b00f0-b518-4bd6-8d88-9d5c29c2e928.eot?#iefix") format("eot"),url("../fonts/cb95722b-c43c-4d13-82de-96551794176e.woff2") format("woff2"),url("../fonts/4dc3217d-f0fd-4c69-8e25-780e1dce8708.woff") format("woff"),url("../fonts/0c0aab4a-7bca-46a2-8894-812f213985d6.ttf") format("truetype"),url("../fonts/85ba5896-0d3a-461a-9d47-aa62a2f14d42.svg#85ba5896-0d3a-461a-9d47-aa62a2f14d42") format("svg");
     }
     @font-face{
-        font-family:"Neue Kabel W01 Bold";
-        src:url("../fonts/22d39f48-6ebf-4aa2-a803-e8aa85aaa835.eot?#iefix");
-        src:url("../fonts/22d39f48-6ebf-4aa2-a803-e8aa85aaa835.eot?#iefix") format("eot"),url("../fonts/750b062a-1d0a-4ba2-9a5b-571c7d4153ee.woff2") format("woff2"),url("../fonts/92820db1-6935-4885-b266-15cc6f1091ce.woff") format("woff"),url("../fonts/d091f126-9ae7-45b5-a89a-5de45985b360.ttf") format("truetype"),url("../fonts/8dd94914-3373-46f8-a9e4-5b108739322c.svg#8dd94914-3373-46f8-a9e4-5b108739322c") format("svg");
+        font-family:"Metro Nova LightItalic";
+        src:url("../fonts/246b5e39-762f-4bbb-ae92-cab870dcb6de.eot?#iefix");
+        src:url("../fonts/246b5e39-762f-4bbb-ae92-cab870dcb6de.eot?#iefix") format("eot"),url("../fonts/f1745226-2fea-4d4b-a1d6-63e59be4777a.woff2") format("woff2"),url("../fonts/406f8dc9-748b-418f-9854-665f5907f8f8.woff") format("woff"),url("../fonts/23d9317c-6282-415d-a03f-b333caf3ccbc.ttf") format("truetype"),url("../fonts/f9b78aa3-3a84-4a2c-a083-d205227e7c42.svg#f9b78aa3-3a84-4a2c-a083-d205227e7c42") format("svg");
     }
     @font-face{
-        font-family:"Neue Kabel W01 Bold Italic";
-        src:url("../fonts/c89362bf-dbe2-4826-a65c-3bd36601f00b.eot?#iefix");
-        src:url("../fonts/c89362bf-dbe2-4826-a65c-3bd36601f00b.eot?#iefix") format("eot"),url("../fonts/c4aed4e3-da6f-4934-8126-b45beb66060c.woff2") format("woff2"),url("../fonts/39113d06-6f13-4986-92e2-a389e519a63b.woff") format("woff"),url("../fonts/1fb02ff0-cfde-423b-a110-bda3b4400dc4.ttf") format("truetype"),url("../fonts/1f07d8fa-0d0d-41d7-9c22-93c6ff1f1861.svg#1f07d8fa-0d0d-41d7-9c22-93c6ff1f1861") format("svg");
+        font-family:"Metro Nova Regular";
+        src:url("../fonts/7e9a3250-4692-416e-a87e-5686979cdf94.eot?#iefix");
+        src:url("../fonts/7e9a3250-4692-416e-a87e-5686979cdf94.eot?#iefix") format("eot"),url("../fonts/90eecb9f-f7d0-4d66-b706-dcb81fac868a.woff2") format("woff2"),url("../fonts/42b33c87-5018-4ce5-9e1e-566624c6c7a3.woff") format("woff"),url("../fonts/918d138d-66ad-438a-bb70-d629132e5671.ttf") format("truetype"),url("../fonts/d0292b22-86c8-4a12-b37a-cc0c422b1f12.svg#d0292b22-86c8-4a12-b37a-cc0c422b1f12") format("svg");
+    }
+    @font-face{
+        font-family:"Metro Nova Italic";
+        src:url("../fonts/81b02941-6f06-4d35-9bd6-beee8cd3d503.eot?#iefix");
+        src:url("../fonts/81b02941-6f06-4d35-9bd6-beee8cd3d503.eot?#iefix") format("eot"),url("../fonts/e46e2418-b4b7-4386-b1de-3b8ae3721cbb.woff2") format("woff2"),url("../fonts/7c76b22e-8fe9-4de6-b129-889fd30812f9.woff") format("woff"),url("../fonts/cb90bbf0-e54f-44b8-8124-9f6b71602f58.ttf") format("truetype"),url("../fonts/2fc757ee-5a36-4057-b7ab-0520ccb733ab.svg#2fc757ee-5a36-4057-b7ab-0520ccb733ab") format("svg");
+    }
+    @font-face{
+        font-family:"Metro Nova Bold";
+        src:url("../fonts/3924b73c-5b33-4cfa-9fda-1ab4e767199f.eot?#iefix");
+        src:url("../fonts/3924b73c-5b33-4cfa-9fda-1ab4e767199f.eot?#iefix") format("eot"),url("../fonts/5b424433-17f6-4b14-adfa-e878498425b8.woff2") format("woff2"),url("../fonts/1348d77c-269d-45be-9e15-e75b8b583b59.woff") format("woff"),url("../fonts/14b4f662-88ee-4db3-b82b-59a0a04ed245.ttf") format("truetype"),url("../fonts/9048fe5f-2a07-45a0-a4f1-31dce9dd6963.svg#9048fe5f-2a07-45a0-a4f1-31dce9dd6963") format("svg");
+    }
+    @font-face{
+        font-family:"Metro Nova BoldItalic";
+        src:url("../fonts/04591642-8468-4ce6-a107-b13873690913.eot?#iefix");
+        src:url("../fonts/04591642-8468-4ce6-a107-b13873690913.eot?#iefix") format("eot"),url("../fonts/545b926c-cffd-402b-8dc9-50ae1170f4c0.woff2") format("woff2"),url("../fonts/d359e623-8f01-4e2e-81bc-6898b967fc55.woff") format("woff"),url("../fonts/9a76034d-a263-4c9a-8c8b-f65559cba999.ttf") format("truetype"),url("../fonts/13272c6e-3d6d-4bb1-80c0-cf36f538fb72.svg#13272c6e-3d6d-4bb1-80c0-cf36f538fb72") format("svg");
     }
 
 
@@ -91,13 +106,14 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	padding-top: 0.5rem;
 	padding-bottom: 0.2rem;
 	color: black;
+	font-family: "Metro Nova Light", sans-serif;
 }
 #logo{
 	padding: 0 0.5rem;
 	font-size: 40px;
 	color: black;
 	opacity: 0.9;
-	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+	font-family: "Metro Nova Thin", $mainjp, sans-serif;
 	font-weight: 700;
 	transition: all 0.4s ease;
 	&:hover{
@@ -110,8 +126,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	font-size: 1.5rem;
 	transition: all 0.4s ease;
 	background-color: rgba(255, 255, 0, 0);
-	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-	font-weight: 700;
+	font-family: "Metro Nova light", $mainjp, sans-serif;
 	img{
 		height: 1.4rem;
 		transform: scale(1.2);
@@ -123,53 +138,52 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 }
 #title{
 	margin-top: 5rem;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 2rem;
 	h3{
-		font-family: "Neue Kabel W01 Light";
+		font-family: "Metro Nova bold", sans-serif;
+		font-weight: 600;
 	}
 	h5{
 		margin-bottom: -0.5rem;
 	}
 	h1, h5{
-		font-family: $mainjp, $mainjp, sans-serif;
+		font-family: $mainjp, sans-serif;
 	}
 	h1{
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-		font-weight: 700;
+		font-family: "Metro Nova Thin", "UD新ゴNT EL", sans-serif;
+		font-weight: 100;
 		font-size: 4rem;
-		margin-bottom: -2.5rem;
+		margin-bottom: -1rem;
 	}
 	h4{
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-		font-weight: 700;
+		font-family: "Metro Nova Thin", $mainjp, sans-serif;
+		font-weight: 100;
 		font-size: 2.5rem;
-		letter-spacing: 0.2rem;
-		opacity: 0.2;
 	}
 }
 .days{
 	text-align: center;
 	margin-top: 2rem;
-	font-family: $maineg, $mainjp, $mainjp, sans-serif;
+	font-family: $maineg, $mainjp, sans-serif;
 	margin-bottom: 1rem;
 	p{
 		font-size: 1.5rem;
 		margin-bottom: -5rem;
 	}
 	.huto{
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+		font-family: "Metro Nova bold", "UD新ゴNT B", sans-serif;
 		font-weight: 700;
 	}
 }
 #CDT{
-	font-family: $maineg, 'A-OTF UD新ゴNT Pr6N';
+	font-family: $maineg, 'UD新ゴNT L';
  	font-size: 26px;
 }
 #CDT .day{
  font-size: 14rem;
  letter-spacing: -0.5rem;
- font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+ font-family: "metro nova thin", "UD新ゴNT L", sans-serif;
  font-weight: 700;
 }
 #CDT .hour,#CDT .min,#CDT .sec, #CDT .milli{
@@ -188,17 +202,11 @@ $mainjp: 'FOT-ロダンNTLG Pro';
   background-size: 100px 100px;
   margin-bottom: 2rem;
 }
-#smday{
-	font-size: 6rem;
-	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-	font-weight: 700;
-	vertical-align: 6px;
-}
 .sitayazi{
 	width: 3rem;
 	height: 3rem;
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
 	margin-left: auto;
 	margin-right: auto;
 	transform: rotate(45deg);
@@ -211,25 +219,34 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 .content{
 	margin: 25% auto;
 }
+#smday{
+	font-size: 6rem;
+	font-family: "Metro Nova thin", "UD新ゴNT L", sans-serif;
+	font-weight: 100;
+	vertical-align: 6px;
+}
 .midashi{
-	text-align: center;
-	background-color: $main;
-  	background-image: gradient(linear, 0 100%, 100% 0,
-    color-stop(.25, #fff), color-stop(.25, transparent),
-    color-stop(.5, transparent), color-stop(.5, #fff),
-    color-stop(.75, #fff), color-stop(.75, transparent),
-    to(transparent));
-    background-image: linear-gradient(45deg, #fff 25%, transparent 25%,
-    transparent 50%, #fff 50%, #fff 75%,
-    transparent 75%, transparent);
-    background-size: 50px 50px;
+	transform: rotate(-5deg);
+	text-align: left;
+	// background-color: $main;
+ //  	background-image: gradient(linear, 0 100%, 100% 0,
+ //    color-stop(.25, #fff), color-stop(.25, transparent),
+ //    color-stop(.5, transparent), color-stop(.5, #fff),
+ //    color-stop(.75, #fff), color-stop(.75, transparent),
+ //    to(transparent));
+ //    background-image: linear-gradient(45deg, #fff 25%, transparent 25%,
+ //    transparent 50%, #fff 50%, #fff 75%,
+ //    transparent 75%, transparent);
+ //    background-size: 50px 50px;
     margin-bottom: 1rem;
-    font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-    font-weight: 700;
+    font-family: "Metro Nova Thinitalic", $mainjp, sans-serif;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    width: 15rem;
 }
 .catch{
 	text-align: center;
-	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+	font-family: "Metro Nova Bold", "UD新ゴNT B", sans-serif;
 	font-weight: 700;
 }
 .grid-item{
@@ -237,19 +254,19 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	padding: 0.5rem;
 	width: 150px;
 	height: 150px;
-	border-radius: 3px;
-	border: 3px solid black;
 	float: left;
 	position: relative;
 	cursor: pointer;
 	transition: box-shadow 0.3s ease;
 	&:hover{
-		box-shadow:7px 7px 0px 0px $main;
+		box-shadow:0px 0px 10px 0px #ddd;
 	}
 	img{
 		margin-bottom: 0.3rem;
 	}
 	.labo{
+		font-family: "UD新ゴNT B", sans-serif;
+		font-weight: 700;
 		font-size: 0.7rem;
 		margin-bottom: 0;
 		background-color: rgba(255,255,255,0.7);
@@ -258,8 +275,8 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 		display: none;
 	}
 	.wname2{
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-		font-weight: 700;
+		font-family: "Metro Nova light", "UD新ゴNT L", sans-serif;
+		font-weight: 200;
 		font-size: 1rem;
 		position: absolute;
 		bottom: 0.2rem;
@@ -273,23 +290,38 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 		padding: 0 0.2rem;
 		top: 0.5rem;
 		right: 0.5rem;
-		background-color: rgba(255,255,0,0.7);
+		background-color: rgba(255,255,255,0.7);
 		font-size: 0.6rem;
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+		font-family: "Metro Nova italic", $mainjp, sans-serif;
 		font-weight: 700;
 	}
 }
 .button-group{
 	button{
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-		font-weight: 700;
-		border: 3px solid black;
+		font-family: "Metro Nova light", "UD新ゴNT L", sans-serif;
+		font-weight: 200;
 		padding: 3px;
-		margin: -1.5px;
+		margin: -0.5px;
 		cursor: pointer;
 		transition: all 0.5s ease;
+		position: relative;
+		display: inline-block;
 		&:hover{
 			background-color: $main;
+		}
+		&::after {
+		  position: absolute;
+		  bottom: 0;
+		  left: 50%;
+		  content: '';
+		  width: 0;
+		  height: 1px;
+		  background-color: black;
+		  transition: 0.5s ease;
+		  transform: translateX(-50%);
+		}
+		&:hover::after {
+		  width: 100%;
 		}
 	}
 
@@ -297,6 +329,7 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 
 .is-checked{
 	background-color: $main;
+	border-bottom: 1px solid black;
 }
 #grid:after {
   content: '';
@@ -308,14 +341,13 @@ $mainjp: 'FOT-ロダンNTLG Pro';
   padding: 0;
 }
 #schedule{
-	background-color: $main;
 	margin-bottom: 1rem;
 	img{
 		padding: 1rem 1rem;
 	}
 }
 .futo{
-	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+	font-family: "Metro Nova Bold", $mainjp, sans-serif;
 	font-weight: 700;
 }
 .linkline{
@@ -338,22 +370,22 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	margin-top: 1rem;
 	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
-	font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
+	font-family: "Metro Nova Bold", $mainjp, sans-serif;
 	font-weight: 700;
 	text-shadow: 0px 3px 7px rgba(0,0,0,0.5);
 }
 #sharefloat{
 	width: 8rem;
 	height: 8rem;
-	background-color: rgba(255, 255, 0, 0.3);
+	background-color: rgba(230, 230, 230, 0.3);
 	right: 0;
 	float: left;
 	padding: 1rem;
 	#via{
-		font-family: "Neue Kabel W01 Bold Italic", $mainjp, sans-serif;
-		font-style: italic;
+		font-family: "Metro Nova BoldItalic", $mainjp, sans-serif;
 		font-size: 1.5rem;
-		margin-bottom: -5px;
+		margin-bottom: 0px;
+		font-size: 1.4em;
 	}
 	a{
 		color: black;
@@ -361,16 +393,16 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 		margin-bottom: 5px;
 	}
 	.share{
-		background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, $main 50%);
-  		background-position: 0 0;
-  		background-size: 200% auto;
-		border: 2px solid black;
+		border: 1px solid black;
 		text-align: center;
-		font-family: "Neue Kabel W01 Bold", $mainjp, sans-serif;
-		font-weight: 700;
-		transition: all 0.5s ease;
+		font-family: "Metro Nova lightitalic", $mainjp, sans-serif;
+		font-weight: 100;
+		transition: all 0.2s ease;
 		&:hover{
-			background-position: -100% 0;
+			transform: rotate(-5deg);
+		}
+		&:active{
+			transform: rotate(-360deg);
 		}
 	}
 }
@@ -378,9 +410,134 @@ $mainjp: 'FOT-ロダンNTLG Pro';
 	margin-bottom: 0px;
 }
 .abeP{
-	background-image: url("../img/patterns/2.jpg");
+	background-image: url("../img/pattern/2.jpg");
+	background-size: cover;
 }
 .andoP{
 	background-image: url("../img/pattern/3.jpg");
+	background-size: cover;
+}
+.uenoP{
+	background-image: url("../img/pattern/4.jpg");
+	background-size: cover;
+}
+.uchimuraP{
+	background-image: url("../img/pattern/5.jpg");
+	background-size: cover;
+}
+.urabeP{
+	background-image: url("../img/pattern/6.jpg");
+	background-size: cover;
+}
+.ohyaP{
+	background-image: url("../img/pattern/7.jpg");
+	background-size: cover;
+}
+.okaniwaP{
+	background-image: url("../img/pattern/8.jpg");
+	background-size: cover;
+}
+.okahashiP{
+	background-image: url("../img/pattern/9.jpg");
+	background-size: cover;
+}
+.kawasakiP{
+	background-image: url("../img/pattern/10.jpg");
+	background-size: cover;
+}
+.kannoP{
+	background-image: url("../img/pattern/11.jpg");
+	background-size: cover;
+}
+.kitadaP{
+	background-image: url("../img/pattern/12.jpg");
+	background-size: cover;
+}
+.kitanoP{
+	background-image: url("../img/pattern/13.jpg");
+	background-size: cover;
+}
+.kojimaP{
+	background-image: url("../img/pattern/14.jpg");
+	background-size: cover;
+}
+.sakamaP{
+	background-image: url("../img/pattern/15.jpg");
+	background-size: cover;
+}
+.sumiyoshiP{
+	background-image: url("../img/pattern/16.jpg");
+	background-size: cover;
+}
+.takeuchiP{
+	background-image: url("../img/pattern/17.jpg");
+	background-size: cover;
+}
+.taniP{
+	background-image: url("../img/pattern/18.jpg");
+	background-size: cover;
+}
+.chosoP{
+	background-image: url("../img/pattern/19.jpg");
+	background-size: cover;
+}
+.togashiP{
+	background-image: url("../img/pattern/20.jpg");
+	background-size: cover;
+}
+.kennosukeP{
+	background-image: url("../img/pattern/21.jpg");
+	background-size: cover;
+}
+.yumaP{
+	background-image: url("../img/pattern/22.jpg");
+	background-size: cover;
+}
+.nakayamaP{
+	background-image: url("../img/pattern/23.jpg");
+	background-size: cover;
+}
+.hashimuraP{
+	background-image: url("../img/pattern/24.jpg");
+	background-size: cover;
+}
+.hamamatsuP{
+	background-image: url("../img/pattern/25.jpg");
+	background-size: cover;
+}
+.hijikataP{
+	background-image: url("../img/pattern/26.jpg");
+	background-size: cover;
+}
+.fujiwaraP{
+	background-image: url("../img/pattern/27.jpg");
+	background-size: cover;
+}
+.matsuoP{
+	background-image: url("../img/pattern/28.jpg");
+	background-size: cover;
+}
+.harukaP{
+	background-image: url("../img/pattern/29.jpg");
+	background-size: cover;
+}
+.riiyaP{
+	background-image: url("../img/pattern/30.jpg");
+	background-size: cover;
+}
+.yamanoP{
+	background-image: url("../img/pattern/32.jpg");
+	background-size: cover;
+}
+.yamayaP{
+	background-image: url("../img/pattern/33.jpg");
+	background-size: cover;
+}
+.yamazakiP{
+	background-image: url("../img/pattern/34.jpg");
+	background-size: cover;
+}
+.iwasawaP{
+	background-image: url("../img/pattern/35.jpg");
 	background-size: cover;
 }
