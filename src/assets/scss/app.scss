@@ -108,13 +108,38 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	color: #D24D8A;
 }
 #footer{
-	background-color: $main;
 	text-align: center;
 	font-size: 12px;
 	padding-top: 0.5rem;
 	padding-bottom: 0.2rem;
 	color: black;
-	font-family: $maineg, sans-serif;
+	font-family: "Metro Nova italic", sans-serif;
+	position: relative;
+  	overflow: hidden;
+  	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 120%;
+		height: 80%;
+		margin: 2% -10% 0;
+		background: $main;
+		transform-origin: right center;
+		transform: rotate(-5deg);
+		z-index: -1;
+	}
+	p{
+	border-bottom: 1px solid black;
+	box-sizing: boder-box;
+	width: 100%;
+	max-width: 640px;
+	height: 100%;
+	margin: 0 auto 3rem;
+	text-align: center;
+	padding-top: 7rem;
+	transform: rotate(-5deg);
+	}
 }
 #logo{
 	padding: 0 0.5rem;
