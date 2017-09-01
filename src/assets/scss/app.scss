@@ -173,38 +173,74 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	}
 }
 #title{
-	margin-top: 5rem;
+	margin-top: 8rem;
 	text-align: left;
 	margin-bottom: 2rem;
+	margin-right: 1rem;
+	#titleflex{
+		display: flex;
+		border-bottom: 1px solid black;
+		transform: rotate(-10deg);
+		align-items: flex-end;
+		margin-bottom: 2rem;
+		h1{
+		font-family: "A-OTF 新ゴ Pro EL", "新ゴ EL", $bookjp;
+		font-weight: 100;
+		font-size: 4rem;
+		line-height: 100%;
+		}
+		h5{
+		font-size: 1em;
+		letter-spacing: 0.5px;
+		font-family: "Metro Nova Reguler", "UD新ゴNT R", "A-OTF UD新ゴNT Pro R", $bookjp;
+		font-weight: 200;
+		line-height: 125%;
+		}
+	}
 	h6{
 		font-family: $boldeg, sans-serif;
 		font-weight: 600;
 		font-size: 1.3em;
 	}
-	h5{
-		margin-bottom: -0.9rem;
-		font-size: 1.3em;
-		letter-spacing: 0.5px;
-		font-family: "Metro Nova Light", "UD新ゴNT L", $bookjp;
-		font-weight: 200;
-		transform: rotate(-10deg);
-	}
-	h1{
-		font-family: "A-OTF 新ゴ Pro EL", "新ゴ EL", $bookjp;
-		font-weight: 100;
-		font-size: 4rem;
-		margin-bottom: 1rem;
-		transform: rotate(-10deg);
-		border-bottom: 1px solid black;
-	}
 	h4{
 		font-family: $thineg, sans-serif;
 		font-weight: 100;
-		font-size: 2.5rem;
+		font-size: 2.5em;
 		margin-bottom: 7rem;
 		transform: rotate(-10deg);
 		border-bottom: 1px solid black;
+		margin-left: 1rem;
 	}
+}
+@media screen and (max-width: 700px) {
+	#title{
+		h5{
+			font-size: 1.2em !important;
+			margin-bottom: 0;
+			br{
+				display: none;
+			}
+		}
+	}
+	#titleflex{
+		flex-direction: column;
+		align-items: flex-start !important;
+	}
+}
+@media screen and (max-width: 500px){
+	#titleflex{
+		h5{
+			margin-left: 1rem;
+		}
+	}
+}
+@media screen and (max-width: 350px){
+	#title{
+		h4{
+			font-size: 2em;
+		}
+	}
+
 }
 .days{
 	text-align: center;
@@ -237,6 +273,33 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	font-family: "A-OTF UD新ゴNT Pro L" ,"UD新ゴNT L", sans-serif;
 	font-weight: 100;
 	vertical-align: 6px;
+}
+@media screen and (min-width: 1025px) and(max-width: 1050px){
+	.days{
+		p{
+			margin-bottom: -2rem;
+		}
+	}
+	.day{
+		font-size: 10rem !important;
+	}
+	#smday{
+		font-size: 4rem !important;
+	}
+}
+@media screen and (max-width: 1025px){
+	.days{
+		margin-top: 3rem !important;
+		p{
+			margin-bottom: -2rem;
+		}
+	}
+	.day{
+		font-size: 10rem !important;
+	}
+	#smday{
+		font-size: 4rem !important;
+	}
 }
 #topback{
 	background-color: $main;
@@ -288,6 +351,11 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
     border-bottom: 1px solid black;
     width: 15rem;
 }
+@media screen and (max-width: 650px){
+	.midashi{
+		font-size: 2em !important;
+	}
+}
 .catch{
 	text-align: center;
 	font-family: $boldeg, $boldjp;
@@ -303,7 +371,7 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	cursor: pointer;
 	transition: box-shadow 0.3s ease;
 	&:hover{
-		box-shadow:0px 0px 10px 0px #ddd;
+		box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 	}
 	img{
 		margin-bottom: 0.3rem;
@@ -340,7 +408,16 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 		background-color: rgba(255,255,255,0.7);
 		font-size: 0.6rem;
 		font-family: "Metro Nova italic", sans-serif;
-		font-style: italic;
+	}
+}
+@media screen and (min-width: 380px) and (max-width: 760px){
+	.grid-item{
+		margin: 0.5rem !important;
+	}
+}
+@media screen and (max-width: 380px){
+	.grid-item{
+		margin: 0 !important;
 	}
 }
 .button-group{
@@ -438,7 +515,7 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 #sharefloat{
 	width: 8rem;
 	height: 8rem;
-	background-color: rgba(230, 230, 230, 0.3);
+	background-color: rgba(245, 245, 245, 0.7);
 	right: 0;
 	float: left;
 	padding: 1rem;
