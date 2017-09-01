@@ -52,9 +52,6 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-$main: #F7F8F8;
-$maineg: 'Metro Nova Light';
-$mainjp: 'UD新ゴNT L';
 
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=17c219ed-5ca4-41c4-9d54-921bb83159e9");
     @font-face{
@@ -97,6 +94,12 @@ $mainjp: 'UD新ゴNT L';
         src:url("../fonts/04591642-8468-4ce6-a107-b13873690913.eot?#iefix");
         src:url("../fonts/04591642-8468-4ce6-a107-b13873690913.eot?#iefix") format("eot"),url("../fonts/545b926c-cffd-402b-8dc9-50ae1170f4c0.woff2") format("woff2"),url("../fonts/d359e623-8f01-4e2e-81bc-6898b967fc55.woff") format("woff"),url("../fonts/9a76034d-a263-4c9a-8c8b-f65559cba999.ttf") format("truetype"),url("../fonts/13272c6e-3d6d-4bb1-80c0-cf36f538fb72.svg#13272c6e-3d6d-4bb1-80c0-cf36f538fb72") format("svg");
     }
+$main: #F7F8F8;
+$thineg: "Metro Nova Thin";
+$maineg: 'Metro Nova Light';
+$boldeg: 'Metro Nova Bold';
+$bookjp: "A-OTF UD新ゴNT Pro L", "FOT-ロダンNTLG Pro L", "ヒラギノ角ゴシック W2", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+$boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角ゴシック W5", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 
 .sat{
 	color: #108B96;
@@ -111,14 +114,14 @@ $mainjp: 'UD新ゴNT L';
 	padding-top: 0.5rem;
 	padding-bottom: 0.2rem;
 	color: black;
-	font-family: "Metro Nova Light", sans-serif;
+	font-family: $maineg, sans-serif;
 }
 #logo{
 	padding: 0 0.5rem;
 	font-size: 40px;
 	color: black;
 	opacity: 0.9;
-	font-family: "Metro Nova Thin", $mainjp, sans-serif;
+	font-family: $thineg, sans-serif;
 	font-weight: 700;
 	transition: all 0.4s ease;position: relative;
 	  display: inline-block;
@@ -144,7 +147,7 @@ $mainjp: 'UD新ゴNT L';
 	color: black;
 	font-size: 1.5rem;
 	transition: all 0.4s ease;
-	font-family: "Metro Nova light", $mainjp, sans-serif;
+	font-family: $maineg, sans-serif;
 	position: relative;
 	  display: inline-block;
 	&::after {
@@ -174,7 +177,7 @@ $mainjp: 'UD新ゴNT L';
 	text-align: left;
 	margin-bottom: 2rem;
 	h6{
-		font-family: "Metro Nova bold", sans-serif;
+		font-family: $boldeg, sans-serif;
 		font-weight: 600;
 		font-size: 1.3em;
 	}
@@ -182,50 +185,58 @@ $mainjp: 'UD新ゴNT L';
 		margin-bottom: -0.9rem;
 		font-size: 1.3em;
 		letter-spacing: 0.5px;
-	}
-	h1, h5{
-		font-family: $mainjp, sans-serif;
+		font-family: "Metro Nova Light", "UD新ゴNT L", $bookjp;
+		font-weight: 200;
+		transform: rotate(-10deg);
 	}
 	h1{
-		font-family: "Metro Nova Thin", "新ゴ EL", sans-serif;
+		font-family: "A-OTF 新ゴ Pro EL", "新ゴ EL", $bookjp;
 		font-weight: 100;
 		font-size: 4rem;
-		margin-bottom: 0rem;
+		margin-bottom: 1rem;
+		transform: rotate(-10deg);
+		border-bottom: 1px solid black;
 	}
 	h4{
-		font-family: "Metro Nova Thin", $mainjp, sans-serif;
+		font-family: $thineg, sans-serif;
 		font-weight: 100;
 		font-size: 2.5rem;
-		margin-bottom: 1rem;
+		margin-bottom: 7rem;
+		transform: rotate(-10deg);
+		border-bottom: 1px solid black;
 	}
 }
 .days{
 	text-align: center;
-	margin-top: 5rem;
-	font-family: $maineg, $mainjp, sans-serif;
+	margin-top: 8rem;
 	margin-bottom: 1rem;
-	bottom: 0;
 	p{
 		font-size: 1.5rem;
 		margin-bottom: -4.5rem;
+		font-family: $bookjp;
 	}
-	.huto{
-		font-family: "Metro Nova bold", "UD新ゴNT DB", sans-serif;
-		font-weight: 700;
+	.futo{
+		font-family: $boldjp;
 	}
 }
 #CDT{
-	font-family: $maineg, 'UD新ゴNT L';
+	font-family: $thineg, sans-serif;
  	font-size: 26px;
 }
 #CDT .day{
  font-size: 14rem;
  letter-spacing: -0.5rem;
- font-family: "metro nova thin", "UD新ゴNT L", sans-serif;
- font-weight: 700;
+ font-family: $thineg, sans-serif;
+ font-weight: 100;
 }
 #CDT .hour,#CDT .min,#CDT .sec, #CDT .milli{
  display: none;
+}
+#smday{
+	font-size: 6rem;
+	font-family: "A-OTF UD新ゴNT Pro L" ,"UD新ゴNT L", sans-serif;
+	font-weight: 100;
+	vertical-align: 6px;
 }
 #topback{
 	background-color: $main;
@@ -257,12 +268,7 @@ $mainjp: 'UD新ゴNT L';
 .content{
 	margin: 25% auto;
 }
-#smday{
-	font-size: 6rem;
-	font-family: "Metro Nova thin", "UD新ゴNT L", sans-serif;
-	font-weight: 100;
-	vertical-align: 6px;
-}
+
 .midashi{
 	transform: rotate(-5deg);
 	text-align: left;
@@ -277,14 +283,14 @@ $mainjp: 'UD新ゴNT L';
  //    transparent 75%, transparent);
  //    background-size: 50px 50px;
     margin-bottom: 1rem;
-    font-family: "Metro Nova Thinitalic", $mainjp, sans-serif;
+    font-family: "Metro Nova Thinitalic", sans-serif;
     font-weight: 100;
     border-bottom: 1px solid black;
     width: 15rem;
 }
 .catch{
 	text-align: center;
-	font-family: "Metro Nova Bold", "UD新ゴNT DB", sans-serif;
+	font-family: $boldeg, $boldjp;
 	font-weight: 700;
 }
 .grid-item{
@@ -305,7 +311,7 @@ $mainjp: 'UD新ゴNT L';
 	.labo{
 		padding-left: 1px;
 		padding-right: 1px;
-		font-family: "UD新ゴNT DB", sans-serif;
+		font-family: $boldjp;
 		font-weight: 700;
 		font-size: 0.7rem;
 		margin-bottom: 0;
@@ -315,7 +321,7 @@ $mainjp: 'UD新ゴNT L';
 		display: none;
 	}
 	.wname2{
-		font-family: "Metro Nova light", "UD新ゴNT L", sans-serif;
+		font-family: $maineg, $bookjp;
 		font-weight: 200;
 		font-size: 1rem;
 		position: absolute;
@@ -333,13 +339,13 @@ $mainjp: 'UD新ゴNT L';
 		right: 0.5rem;
 		background-color: rgba(255,255,255,0.7);
 		font-size: 0.6rem;
-		font-family: "Metro Nova italic", $mainjp, sans-serif;
-		font-weight: 700;
+		font-family: "Metro Nova italic", sans-serif;
+		font-style: italic;
 	}
 }
 .button-group{
 	button{
-		font-family: "Metro Nova light", "UD新ゴNT L", sans-serif;
+		font-family: $maineg, $bookjp;
 		font-weight: 200;
 		padding: 3px;
 		margin: -0.5px;
@@ -388,7 +394,7 @@ $mainjp: 'UD新ゴNT L';
 	}
 }
 .futo{
-	font-family: "Metro Nova Bold", "UD新ゴNT DB", sans-serif;
+	font-family: $boldeg, $boldjp;
 	font-weight: 700;
 }
 .linkline{
@@ -425,7 +431,7 @@ $mainjp: 'UD新ゴNT L';
 	margin-top: 1rem;
 	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
-	font-family: "Metro Nova Bold", $mainjp, sans-serif;
+	font-family: $boldeg, $boldjp;
 	font-weight: 700;
 	text-shadow: 0px 3px 7px rgba(0,0,0,0.5);
 }
@@ -437,7 +443,7 @@ $mainjp: 'UD新ゴNT L';
 	float: left;
 	padding: 1rem;
 	#via{
-		font-family: "Metro Nova BoldItalic", $mainjp, sans-serif;
+		font-family: "Metro Nova BoldItalic", sans-serif;
 		font-size: 1.5rem;
 		margin-bottom: 0px;
 		font-size: 1.4em;
@@ -450,7 +456,7 @@ $mainjp: 'UD新ゴNT L';
 	.share{
 		border: 1px solid black;
 		text-align: center;
-		font-family: "Metro Nova lightitalic", $mainjp, sans-serif;
+		font-family: "Metro Nova lightitalic", sans-serif;
 		font-weight: 100;
 		transition: all 0.2s ease;
 		&:hover{
@@ -463,6 +469,9 @@ $mainjp: 'UD新ゴNT L';
 }
 #skipcon4{
 	margin-bottom: 0px;
+}
+.reveal{
+	box-shadow:0px 0px 10px 0px #ddd;
 }
 .abeP{
 	background-image: url("../img/pattern/2.jpg");
