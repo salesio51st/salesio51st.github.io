@@ -98,6 +98,9 @@ $main: #F7F8F8;
 $thineg: "Metro Nova Thin";
 $maineg: 'Metro Nova Light';
 $boldeg: 'Metro Nova Bold';
+$thinit: "Metro Nova Thinitalic";
+$mainit: 'Metro Nova Lightitalic';
+$boldit: 'Metro Nova Bolditalic';
 $bookjp: "A-OTF UD新ゴNT Pro L", "FOT-ロダンNTLG Pro L", "ヒラギノ角ゴシック W2", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角ゴシック W5", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 
@@ -143,6 +146,7 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 }
 .top-bar{
 	transition: 0.5s ease all;
+	z-index: 100;
 	&:hover{
 		box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 	}
@@ -152,10 +156,11 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	font-size: 40px;
 	color: black;
 	opacity: 0.9;
-	font-family: $thineg, sans-serif;
+	font-family: $thinit, sans-serif;
 	font-weight: 700;
 	transition: all 0.4s ease;position: relative;
 	  display: inline-block;
+	  transform: rotate(-5deg);
 	&::after {
 	  position: absolute;
 	  bottom: 0;
@@ -171,14 +176,13 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	}
 	&:hover{
 		color: black;
-		transform: rotate(-10deg);
 	}
 }
 .topmenu{
 	color: black;
 	font-size: 1.5rem;
 	transition: all 0.4s ease;
-	font-family: $maineg, sans-serif;
+	font-family: $mainit, sans-serif;
 	position: relative;
 	  display: inline-block;
 	&::after {
@@ -196,87 +200,99 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	}
 	img{
 		height: 1.4rem;
-		transform: scale(1.2);
+		transform: scale(1.2) skewX(-5deg);
 	}
 	&:hover{
-		transform: rotate(-10deg);
+		transform: rotate(-5deg);
 		color: black;
 	}
 }
 #title{
-	margin-top: 8rem;
+	margin-top: 3rem;
 	text-align: left;
 	margin-bottom: 2rem;
 	margin-right: 1rem;
-	#titleflex{
-		display: flex;
-		border-bottom: 1px solid black;
-		transform: rotate(-10deg);
-		align-items: flex-end;
-		margin-bottom: 2rem;
-		h1{
-		font-family: "A-OTF 新ゴ Pro EL", "新ゴ EL", $bookjp;
-		font-weight: 100;
-		font-size: 4rem;
-		line-height: 100%;
-		}
-		h5{
-		font-size: 1em;
-		letter-spacing: 0.5px;
-		font-family: "Metro Nova Reguler", "UD新ゴNT R", "A-OTF UD新ゴNT Pro R", $bookjp;
-		font-weight: 200;
-		line-height: 125%;
+	// #titleflex{
+	// 	display: flex;
+	// 	border-bottom: 1px solid black;
+	// 	transform: rotate(-5deg);
+	// 	align-items: flex-end;
+	// 	margin-bottom: 2rem;
+	// 	h1{
+	// 	font-family: "A-OTF 新ゴ Pro EL", "新ゴ EL", $bookjp;
+	// 	font-weight: 100;
+	// 	font-size: 4rem;
+	// 	line-height: 100%;
+	// 	}
+	// 	h5{
+	// 	font-size: 1em;
+	// 	letter-spacing: 0.5px;
+	// 	font-family: "Metro Nova Reguler", "UD新ゴNT R", "A-OTF UD新ゴNT Pro R", $bookjp;
+	// 	font-weight: 200;
+	// 	line-height: 125%;
+	// 	}
+	// }
+	div{
+		transform: skewY(-5deg);
+		background: rgba(255,255,255,0.9);
+		margin-bottom: 15rem;
+		img{
+			width: 100%;
+			transform: skewY(5deg);
 		}
 	}
 	h6{
 		font-family: $boldeg, sans-serif;
 		font-weight: 600;
 		font-size: 1.3em;
+		color: black;
+		text-shadow: 0px 0px 5px rgba(255,255,255,0.5);
 	}
-	h4{
-		font-family: $thineg, sans-serif;
-		font-weight: 100;
-		font-size: 2.5em;
-		margin-bottom: 7rem;
-		transform: rotate(-10deg);
-		border-bottom: 1px solid black;
-		margin-left: 1rem;
-	}
+	// h4{
+	// 	font-family: $thineg, sans-serif;
+	// 	font-weight: 100;
+	// 	font-size: 2.5em;
+	// 	margin-bottom: 7rem;
+	// 	transform: rotate(-5deg);
+	// 	border-bottom: 1px solid black;
+	// 	margin-left: 1rem;
+	// }
 }
-@media screen and (max-width: 700px) {
-	#title{
-		h5{
-			font-size: 1.2em !important;
-			margin-bottom: 0;
-			br{
-				display: none;
-			}
-		}
-	}
-	#titleflex{
-		flex-direction: column;
-		align-items: flex-start !important;
-	}
-}
-@media screen and (max-width: 500px){
-	#titleflex{
-		h5{
-			margin-left: 1rem;
-		}
-	}
-}
-@media screen and (max-width: 350px){
-	#title{
-		h4{
-			font-size: 2em;
-		}
-	}
+// @media screen and (max-width: 700px) {
+// 	#title{
+// 		h5{
+// 			font-size: 1.2em !important;
+// 			margin-bottom: 0;
+// 			br{
+// 				display: none;
+// 			}
+// 		}
+// 	}
+// 	#titleflex{
+// 		flex-direction: column;
+// 		align-items: flex-start !important;
+// 	}
+// }
+// @media screen and (max-width: 500px){
+// 	#titleflex{
+// 		h5{
+// 			margin-left: 1rem;
+// 		}
+// 	}
+// }
+// @media screen and (max-width: 350px){
+// 	#title{
+// 		h4{
+// 			font-size: 2em;
+// 		}
+// 	}
 
-}
+// }
 .days{
 	text-align: center;
-	margin-top: 8rem;
+	margin-top: 0rem;
 	margin-bottom: 1rem;
+	color: rgba(0,0,0,0.5);
 	p{
 		font-size: 1.5rem;
 		margin-bottom: -4.5rem;
@@ -333,17 +349,44 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	}
 }
 #topback{
-	background-color: $main;
-  background-image: gradient(linear, 0 100%, 100% 0,
-            color-stop(.25, #fff), color-stop(.25, transparent),
-            color-stop(.5, transparent), color-stop(.5, #fff),
-            color-stop(.75, #fff), color-stop(.75, transparent),
-            to(transparent));
-  background-image: linear-gradient(45deg, #fff 25%, transparent 25%,
-          transparent 50%, #fff 50%, #fff 75%,
-          transparent 75%, transparent);
-  background-size: 100px 100px;
+	// background-color: $main;
+ //  background-image: gradient(linear, 0 100%, 100% 0,
+ //            color-stop(.25, #fff), color-stop(.25, transparent),
+ //            color-stop(.5, transparent), color-stop(.5, #fff),
+ //            color-stop(.75, #fff), color-stop(.75, transparent),
+ //            to(transparent));
+ //  background-image: linear-gradient(45deg, #fff 25%, transparent 25%,
+ //          transparent 50%, #fff 50%, #fff 75%,
+ //          transparent 75%, transparent);
+ //  background-size: 100px 100px;
+ position: relative;
+  overflow: hidden;
+  margin-top: -7rem;
+  padding: 80px 0;
   margin-bottom: 2rem;
+  &:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 80%;
+  margin: 2% -10% 0;
+  background: url(../img/top1.jpg);
+  background-size: cover;
+  background-position: center;
+  transform-origin: right center;
+  transform: rotate(-5deg);
+  z-index: -1;
+  }
+  .row{
+  	box-sizing: boder-box;
+  width: 100%;
+  max-width: auto;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 10px 120px;
+  }
 }
 .sitayazi{
 	width: 3rem;
@@ -456,7 +499,7 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 		font-family: $maineg, $bookjp;
 		font-weight: 200;
 		padding: 3px;
-		margin: -0.5px;
+		margin: 3px;
 		cursor: pointer;
 		transition: all 0.5s ease;
 		position: relative;
@@ -484,7 +527,8 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 
 .is-checked{
 	background-color: $main;
-	border-bottom: 1px solid black;
+	border: 1px solid black;
+	transform: rotate(-5deg) skewX(-5deg);
 }
 #grid:after {
   content: '';
@@ -526,7 +570,12 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	}
 	&:hover{
 		color: black;
+		transform: rotate(-5deg) skewX(-5deg);
+		background: white;
 	}
+}
+#workm{
+	margin-bottom: 2rem;
 }
 .detail{
 	font-size: 0.9rem;
