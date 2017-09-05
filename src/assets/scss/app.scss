@@ -366,7 +366,6 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
   overflow: hidden;
   margin-top: -7rem;
   padding: 80px 0;
-  margin-bottom: 2rem;
   &:before{
   content: '';
   position: absolute;
@@ -701,32 +700,57 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	box-shadow:0px 0px 10px 0px #555;
 	border: none;
 }
+.leftarrow{
+	height: 2rem;
+	width: 2rem;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	transform: rotate(-45deg);
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.3s all ease;
+	&:hover{
+		transform: rotate(-45deg) translate(-5px,-5px);
+		background: $main;
+	}
+}
+.rightarrow{
+	height: 2rem;
+	width: 2rem;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	transform: rotate(45deg);
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
 .abeP{
-	background-image: url("../img/pattern/2.jpg");
+	background-image: url("../img/pattern/2.svg");
 	background-size: cover;
 }
 .andoP{
-	background-image: url("../img/pattern/3.jpg");
+	background-image: url("../img/pattern/3.svg");
 	background-size: cover;
 }
 .uenoP{
-	background-image: url("../img/pattern/4.jpg");
+	background-image: url("../img/pattern/4.svg");
 	background-size: cover;
 }
 .uchimuraP{
-	background-image: url("../img/pattern/5.jpg");
+	background-image: url("../img/pattern/5.svg");
 	background-size: cover;
 }
 .urabeP{
-	background-image: url("../img/pattern/6.jpg");
+	background-image: url("../img/pattern/6.svg");
 	background-size: cover;
 }
 .ohyaP{
-	background-image: url("../img/pattern/7.jpg");
+	background-image: url("../img/pattern/7.svg");
 	background-size: cover;
 }
 .okaniwaP{
-	background-image: url("../img/pattern/8.jpg");
+	background-image: url("../img/pattern/8.svg");
 	background-size: cover;
 }
 .okahashiP{
@@ -734,102 +758,102 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 	background-size: cover;
 }
 .kawasakiP{
-	background-image: url("../img/pattern/10.jpg");
+	background-image: url("../img/pattern/10.svg");
 	background-size: cover;
 }
 .kannoP{
-	background-image: url("../img/pattern/11.jpg");
+	background-image: url("../img/pattern/11.svg");
 	background-size: cover;
 }
 .kitadaP{
-	background-image: url("../img/pattern/12.jpg");
+	background-image: url("../img/pattern/12.svg");
 	background-size: cover;
 }
 .kitanoP{
-	background-image: url("../img/pattern/13.jpg");
+	background-image: url("../img/pattern/13.svg");
 	background-size: cover;
 }
 .kojimaP{
-	background-image: url("../img/pattern/14.jpg");
+	background-image: url("../img/pattern/14.svg");
 	background-size: cover;
 }
 .sakamaP{
-	background-image: url("../img/pattern/15.jpg");
+	background-image: url("../img/pattern/15.svg");
 	background-size: cover;
 }
 .sumiyoshiP{
-	background-image: url("../img/pattern/16.jpg");
+	background-image: url("../img/pattern/16.svg");
 	background-size: cover;
 }
 .takeuchiP{
-	background-image: url("../img/pattern/17.jpg");
+	background-image: url("../img/pattern/17.svg");
 	background-size: cover;
 }
 .taniP{
-	background-image: url("../img/pattern/18.jpg");
+	background-image: url("../img/pattern/18.svg");
 	background-size: cover;
 }
 .chosoP{
-	background-image: url("../img/pattern/19.jpg");
+	background-image: url("../img/pattern/19.svg");
 	background-size: cover;
 }
 .togashiP{
-	background-image: url("../img/pattern/20.jpg");
+	background-image: url("../img/pattern/20.svg");
 	background-size: cover;
 }
 .kennosukeP{
-	background-image: url("../img/pattern/21.jpg");
+	background-image: url("../img/pattern/21.svg");
 	background-size: cover;
 }
 .yumaP{
-	background-image: url("../img/pattern/22.jpg");
+	background-image: url("../img/pattern/22.svg");
 	background-size: cover;
 }
 .nakayamaP{
-	background-image: url("../img/pattern/23.jpg");
+	background-image: url("../img/pattern/23.svg");
 	background-size: cover;
 }
 .hashimuraP{
-	background-image: url("../img/pattern/24.jpg");
+	background-image: url("../img/pattern/24.svg");
 	background-size: cover;
 }
 .hamamatsuP{
-	background-image: url("../img/pattern/25.jpg");
+	background-image: url("../img/pattern/25.svg");
 	background-size: cover;
 }
 .hijikataP{
-	background-image: url("../img/pattern/26.jpg");
+	background-image: url("../img/pattern/26.svg");
 	background-size: cover;
 }
 .fujiwaraP{
-	background-image: url("../img/pattern/27.jpg");
+	background-image: url("../img/pattern/27.svg");
 	background-size: cover;
 }
 .matsuoP{
-	background-image: url("../img/pattern/28.jpg");
+	background-image: url("../img/pattern/28.svg");
 	background-size: cover;
 }
 .harukaP{
-	background-image: url("../img/pattern/29.jpg");
+	background-image: url("../img/pattern/29.svg");
 	background-size: cover;
 }
 .riiyaP{
-	background-image: url("../img/pattern/30.jpg");
+	background-image: url("../img/pattern/30.svg");
 	background-size: cover;
 }
 .yamanoP{
-	background-image: url("../img/pattern/32.jpg");
+	background-image: url("../img/pattern/32.svg");
 	background-size: cover;
 }
 .yamayaP{
-	background-image: url("../img/pattern/33.jpg");
+	background-image: url("../img/pattern/33.svg");
 	background-size: cover;
 }
 .yamazakiP{
-	background-image: url("../img/pattern/34.jpg");
+	background-image: url("../img/pattern/34.svg");
 	background-size: cover;
 }
 .iwasawaP{
-	background-image: url("../img/pattern/35.jpg");
+	background-image: url("../img/pattern/35.svg");
 	background-size: cover;
 }
