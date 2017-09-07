@@ -104,6 +104,27 @@ $boldit: 'Metro Nova Bolditalic';
 $bookjp: "A-OTF UD新ゴNT Pro L", "FOT-ロダンNTLG Pro L", "ヒラギノ角ゴシック W2", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角ゴシック W5", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 
+#loadwrap{
+	#center{
+		position: fixed;
+		top: 40%;
+	  left: 50%;
+	  width: 50%;
+	  transform: translate(-50%, -50%);
+	#slash{
+		margin-top: -20px;
+		border-top: 2px solid black;
+		width: 120%;
+		transform: skewY(-5deg);
+		}
+	}
+}
+#wrap{
+	margin-top: 1000px;
+}
+body > #loadwrap{
+	height: auto;
+}
 .sat{
 	color: #108B96;
 }
