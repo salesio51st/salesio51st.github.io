@@ -229,7 +229,7 @@ body > #loadwrap{
 	}
 }
 #title{
-	margin-top: 3rem;
+	margin-top: 1rem;
 	text-align: left;
 	margin-bottom: 2rem;
 	margin-right: 1rem;
@@ -606,7 +606,6 @@ body > #loadwrap{
 .ownpat{
 	padding-left: 0.3rem;
 	margin-top: 1rem;
-	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
 	font-family: $boldeg, $boldjp;
 	font-weight: 700;
@@ -745,6 +744,11 @@ body > #loadwrap{
 	cursor: pointer;
 	margin-left: auto;
 	margin-right: auto;
+	transition: 0.3s all ease;
+	&:hover{
+		transform: rotate(45deg) translate(5px,-5px);
+		background: $main;
+	}
 }
 .abeP{
 	background-image: url("../img/pattern/2.svg");
