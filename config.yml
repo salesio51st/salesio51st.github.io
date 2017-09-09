@@ -32,3 +32,4 @@ PATHS:
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
+    - "bower_components/bower-skrollr/skrollr.min.js"
