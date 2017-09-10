@@ -101,8 +101,8 @@ $boldeg: 'Metro Nova Bold';
 $thinit: "Metro Nova Thinitalic";
 $mainit: 'Metro Nova Lightitalic';
 $boldit: 'Metro Nova Bolditalic';
-$bookjp: "A-OTF UD新ゴNT Pro L", "FOT-ロダンNTLG Pro L", "ヒラギノ角ゴシック W2", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
-$boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角ゴシック W5", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+$bookjp: "A-OTF UD新ゴNT Pro L", "FOT-ロダンNTLG Pro L", "ヒラギノ角ゴシック W2", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+$boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角ゴシック W5", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN W6", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 
 .title-bar{
 	.menu-icon::after{
@@ -679,18 +679,20 @@ body > #loadwrap{
 		background-size: cover;
 	}
 	.labdetail{
-		p{
-			font-family: $boldjp;
+		.labhover{
 			background-color: rgba(255,255,255,0.8);
 			width: 100%;
 			height: 100%;
-			text-align: center;
-			line-height: 5rem;
 			opacity: 0;
 			transition: 0.3s ease all;
 			&:hover{
 				opacity: 1;
 			}
+		}
+		p{
+			font-family: $boldjp;
+			text-align: center;
+			font-weight: bold;
 		}
 	}
 }
