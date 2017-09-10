@@ -111,11 +111,7 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 }
 #loadwrap{
 	#center{
-		position: fixed;
-		top: 40%;
-	  left: 50%;
 	  width: 50%;
-	  transform: translate(-50%, -50%);
 	#slash{
 		margin-top: -20px;
 		border-top: 2px solid black;
@@ -908,3 +904,23 @@ body > #loadwrap{
 	background-image: url("../img/pattern/35.svg");
 	background-size: cover;
 }
+// skrollr
+// html, body {
+// 　width:100%;
+// 　height:100%;
+// 　padding:0;
+// 　margin:0;
+// 　overflow-x:hidden;
+// }
+// .skrollable{
+// 	position: fixed;
+// }
+// .skrollr-mobile .skrollable{
+// 	position: absolute;
+// }
+// .skrollable .skrollable{
+// 	position: absolute;
+// }
+// .skrollable .skrollable .skrollable{
+// 	position: static;
+// }
