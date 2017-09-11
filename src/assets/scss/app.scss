@@ -119,6 +119,14 @@ $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角
 		}
 	}
 }
+@media screen and (max-width: 500px){
+	#loadwrap{
+		display: none !important;
+	}
+	#wrap{
+		margin-top: 0!important;
+	}
+}
 #wrap{
 	margin-top: 100%;
 }
