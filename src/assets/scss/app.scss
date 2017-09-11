@@ -51,7 +51,11 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
+@include mui-slide(
+  $direction: down,
+  $duration: 0.3s,
+  $timing: bounce
+);
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=17c219ed-5ca4-41c4-9d54-921bb83159e9");
     @font-face{
         font-family:"Metro Nova Thin";
@@ -104,6 +108,7 @@ $bookjp: "A-OTF UD新ゴNT Pro L", "FOT-ロダンNTLG Pro L", "ヒラギノ角�
 $boldjp: "A-OTF UD新ゴNT Pro DB", "FOT-ロダンNTLG Pro DB", "ヒラギノ角ゴシック W5", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN W6", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 
 .title-bar{
+	z-index: 101;
 	.menu-icon::after{
 		transition: all 0.3s ease;
 	}
