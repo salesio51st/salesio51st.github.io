@@ -56,6 +56,10 @@
   $duration: 0.3s,
   $timing: bounce
 );
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=17c219ed-5ca4-41c4-9d54-921bb83159e9");
     @font-face{
         font-family:"Metro Nova Thin";
@@ -494,9 +498,8 @@ body > #loadwrap{
 }
 .grid-item{
 	margin: 1rem;
-	padding: 0.5rem;
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	float: left;
 	position: relative;
 	cursor: pointer;
@@ -504,29 +507,63 @@ body > #loadwrap{
 	&:hover{
 		box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 	}
+	.owndetail{
+		position: relative;
+		display: none;
+		transition: all 0.5s ease;
+		transform: translateY(0px);
+		background-color: white;
+		width: 200px;
+		box-shadow: 0px 0px 10px 0px #ddd;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50px;
+		 	margin-left: -10px;
+			border: 10px solid transparent;
+			border-top: 10px solid white;
+		}
+	}
+	&:hover > .owndetail{
+		display: block;
+		transition: all 0.5s ease;
+		transform: translateY(-110px);
+		animation-name: fadeIn;
+		animation-duration: 0.5s;
+	}
 	img{
-		margin-bottom: 0.3rem;
+		opacity: 0.2;
 	}
 	.labo{
-		padding-left: 1px;
-		padding-right: 1px;
+		position: absolute;
+		top: 30px;
 		font-family: $boldjp;
 		font-weight: 700;
 		font-size: 0.7rem;
-		margin-bottom: 0;
-		background-color: rgba(255,255,255,0.7);
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
 	}
 	.wlabo{
 		display: none;
 	}
 	.wname2{
+		position: absolute;
 		font-family: $maineg, $bookjp;
 		font-weight: 200;
 		font-size: 1rem;
 		position: absolute;
-		bottom: 0.2rem;
-		background-color: white;
-		padding: 0 3px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 45px;
+	}
+	.num{
+		font-family: $thineg;
+		position: absolute;
+		font-size: 6em;
+		opacity: 0.2;
+		top: -13px;
 	}
 	.wname{
 		display: none;
@@ -534,8 +571,6 @@ body > #loadwrap{
 	.wcate{
 		position: absolute;
 		padding: 0 0.2rem;
-		top: 0.5rem;
-		right: 0.5rem;
 		background-color: rgba(255,255,255,0.7);
 		font-size: 0.6rem;
 		font-family: "Metro Nova italic", sans-serif;
@@ -755,36 +790,6 @@ body > #loadwrap{
 .reveal{
 	box-shadow:0px 0px 10px 0px #555;
 	border: none;
-}
-.leftarrow{
-	height: 2rem;
-	width: 2rem;
-	border-top: 1px solid black;
-	border-left: 1px solid black;
-	transform: rotate(-45deg);
-	cursor: pointer;
-	margin-left: auto;
-	margin-right: auto;
-	transition: 0.3s all ease;
-	&:hover{
-		transform: rotate(-45deg) translate(-5px,-5px);
-		background: $main;
-	}
-}
-.rightarrow{
-	height: 2rem;
-	width: 2rem;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	transform: rotate(45deg);
-	cursor: pointer;
-	margin-left: auto;
-	margin-right: auto;
-	transition: 0.3s all ease;
-	&:hover{
-		transform: rotate(45deg) translate(5px,-5px);
-		background: $main;
-	}
 }
 .abeP{
 	background-image: url("../img/pattern/2.svg");
