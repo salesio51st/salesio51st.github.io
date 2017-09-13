@@ -520,7 +520,7 @@ body > #loadwrap{
 			content: "";
 			position: absolute;
 			top: 100%;
-			left: 50px;
+			left: 50%;
 		 	margin-left: -10px;
 			border: 10px solid transparent;
 			border-top: 10px solid white;
@@ -529,7 +529,7 @@ body > #loadwrap{
 	&:hover > .owndetail{
 		display: block;
 		transition: all 0.5s ease;
-		transform: translateY(-110px);
+		transform: translate(-50px,-110px);
 		animation-name: fadeIn;
 		animation-duration: 0.5s;
 	}
