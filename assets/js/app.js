@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 43);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -14475,11 +14475,11 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _whatInput = __webpack_require__(41);
+var _whatInput = __webpack_require__(39);
 
 var _whatInput2 = _interopRequireDefault(_whatInput);
 
-var _foundationSites = __webpack_require__(24);
+var _foundationSites = __webpack_require__(22);
 
 var _foundationSites2 = _interopRequireDefault(_foundationSites);
 
@@ -14495,9 +14495,7 @@ window.$ = _jquery2.default;
 (0, _jquery2.default)(document).foundation();
 
 /***/ }),
-/* 22 */,
-/* 23 */,
-/* 24 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14511,7 +14509,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _foundation = __webpack_require__(26);
+var _foundation = __webpack_require__(24);
 
 var _foundationUtil = __webpack_require__(1);
 
@@ -14533,7 +14531,7 @@ var _foundationUtil9 = __webpack_require__(10);
 
 var _foundationUtil10 = __webpack_require__(5);
 
-var _foundation2 = __webpack_require__(25);
+var _foundation2 = __webpack_require__(23);
 
 var _foundation3 = __webpack_require__(11);
 
@@ -14541,39 +14539,39 @@ var _foundation4 = __webpack_require__(12);
 
 var _foundation5 = __webpack_require__(13);
 
-var _foundation6 = __webpack_require__(27);
+var _foundation6 = __webpack_require__(25);
 
 var _foundation7 = __webpack_require__(14);
 
-var _foundation8 = __webpack_require__(28);
+var _foundation8 = __webpack_require__(26);
 
-var _foundation9 = __webpack_require__(29);
+var _foundation9 = __webpack_require__(27);
 
-var _foundation10 = __webpack_require__(30);
+var _foundation10 = __webpack_require__(28);
 
-var _foundation11 = __webpack_require__(31);
+var _foundation11 = __webpack_require__(29);
 
-var _foundation12 = __webpack_require__(32);
+var _foundation12 = __webpack_require__(30);
 
-var _foundation13 = __webpack_require__(34);
+var _foundation13 = __webpack_require__(32);
 
-var _foundation14 = __webpack_require__(35);
+var _foundation14 = __webpack_require__(33);
 
-var _foundation15 = __webpack_require__(36);
+var _foundation15 = __webpack_require__(34);
 
-var _foundation16 = __webpack_require__(37);
+var _foundation16 = __webpack_require__(35);
 
 var _foundation17 = __webpack_require__(16);
 
-var _foundation18 = __webpack_require__(38);
+var _foundation18 = __webpack_require__(36);
 
 var _foundation19 = __webpack_require__(17);
 
-var _foundation20 = __webpack_require__(39);
+var _foundation20 = __webpack_require__(37);
 
-var _foundation21 = __webpack_require__(40);
+var _foundation21 = __webpack_require__(38);
 
-var _foundation22 = __webpack_require__(33);
+var _foundation22 = __webpack_require__(31);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14647,7 +14645,7 @@ _foundation.Foundation.plugin(_foundation22.ResponsiveAccordionTabs, 'Responsive
 exports.default = _foundation.Foundation;
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15317,7 +15315,7 @@ Abide.defaults = {
 exports.Abide = Abide;
 
 /***/ }),
-/* 26 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15682,7 +15680,7 @@ function hyphenate(str) {
 exports.Foundation = Foundation;
 
 /***/ }),
-/* 27 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16135,7 +16133,7 @@ Dropdown.defaults = {
 exports.Dropdown = Dropdown;
 
 /***/ }),
-/* 28 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16542,7 +16540,7 @@ Equalizer.defaults = {
 exports.Equalizer = Equalizer;
 
 /***/ }),
-/* 29 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16814,7 +16812,7 @@ Interchange.SPECIAL_QUERIES = {
 exports.Interchange = Interchange;
 
 /***/ }),
-/* 30 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17136,7 +17134,7 @@ Magellan.defaults = {
 exports.Magellan = Magellan;
 
 /***/ }),
-/* 31 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17764,7 +17762,7 @@ OffCanvas.defaults = {
 exports.OffCanvas = OffCanvas;
 
 /***/ }),
-/* 32 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18372,7 +18370,7 @@ Orbit.defaults = {
 exports.Orbit = Orbit;
 
 /***/ }),
-/* 33 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18668,7 +18666,7 @@ ResponsiveAccordionTabs.defaults = {};
 exports.ResponsiveAccordionTabs = ResponsiveAccordionTabs;
 
 /***/ }),
-/* 34 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18877,7 +18875,7 @@ ResponsiveMenu.defaults = {};
 exports.ResponsiveMenu = ResponsiveMenu;
 
 /***/ }),
-/* 35 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19085,7 +19083,7 @@ ResponsiveToggle.defaults = {
 exports.ResponsiveToggle = ResponsiveToggle;
 
 /***/ }),
-/* 36 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19735,7 +19733,7 @@ function mobileSniff() {
 exports.Reveal = Reveal;
 
 /***/ }),
-/* 37 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20545,7 +20543,7 @@ function baseLog(base, value) {
 exports.Slider = Slider;
 
 /***/ }),
-/* 38 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21131,7 +21129,7 @@ function emCalc(em) {
 exports.Sticky = Sticky;
 
 /***/ }),
-/* 39 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21333,7 +21331,7 @@ Toggler.defaults = {
 exports.Toggler = Toggler;
 
 /***/ }),
-/* 40 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21851,7 +21849,7 @@ Tooltip.defaults = {
 exports.Tooltip = Tooltip;
 
 /***/ }),
-/* 41 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22242,8 +22240,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)(module)))
 
 /***/ }),
-/* 42 */,
-/* 43 */
+/* 40 */,
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(21);
