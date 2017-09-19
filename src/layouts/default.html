@@ -1,51 +1,53 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
-
 <!doctype html>
 <html class="no-js" lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サレジオ高専51期卒業研究作品展</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# school: http://ogp.me/ns/school#">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サレジオ高専51期卒業研究作品展</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# school: http://ogp.me/ns/school#">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <meta property="og:title" content="サレジオ高専51期卒業研究作品展">
-  <meta property="og:description" content="2017年度、サレジオ高専51期デザイン学科卒業研究作品展 テーマ「Pattern」のホームページです。展示スケジュール、研究内容、会場へのアクセス情報などを掲載しています。">
-  <meta property="og:image" content="https://salesio51st.github.io/assets/img/top.png">
-  <meta property="og:type" content="school" />
-  <meta property="og:url" contetnt="http://salesio51st.github.io">
-  <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?ggfsXn9cZZA%3D&fadein=0" charset="utf-8"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <meta property="og:description" content="2017年度、サレジオ高専51期デザイン学科卒業研究作品展 テーマ「Pattern」のホームページです。展示スケジュール、研究内容、会場へのアクセス情報などを掲載しています。">
+    <meta property="og:image" content="https://salesio51st.github.io/assets/img/top.png">
+    <meta property="og:type" content="school" />
+    <meta property="og:url" contetnt="http://salesio51st.github.io">
+    <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?ggfsXn9cZZA%3D&fadein=0" charset="utf-8"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-104678098-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
+    ga('create', 'UA-104678098-1', 'auto');
+    ga('send', 'pageview');
+    </script>
   </head>
+
   <body>
-
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> header}}
-    {{> lorder}}
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> header}} {{> lorder}}
     <div id="skrollr-body">
-    {{> body}}
+      {{> body}}
     </div>
-    {{> share}}
-    {{> footer}}
-
-<!-- <script>
+    {{> share}} {{> footer}}
+    <!-- <script>
 $(function() {
   var h = $(window).height();
  
@@ -71,81 +73,101 @@ function stopload(){
 }
 </script> -->
     <script language="JavaScript" type="text/javascript">
-function CountdownTimer(elm,tl,mes){
- this.initialize.apply(this,arguments);
-}
-CountdownTimer.prototype={
- initialize:function(elm,tl,mes) {
-  this.elem = document.getElementById(elm);
-  this.tl = tl;
-  this.mes = mes;
- },countDown:function(){
-  var timer='';
-  var today=new Date();
-  var day=Math.floor((this.tl-today)/(24*60*60*1000));
-  var hour=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*60*1000));
-  var min=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*1000))%60;
-  var sec=Math.floor(((this.tl-today)%(24*60*60*1000))/1000)%60%60;
-  var milli=Math.floor(((this.tl-today)%(24*60*60*1000))/10)%100;
-  var me=this;
-
-  if( ( this.tl - today ) > 0 ){
-   if (day) timer += '<span class="day">'+day+'<span id="smday">日</span></span>';
-   if (hour) timer += '<span class="hour">'+hour+'時間</span>';
-   timer += '<span class="min">'+this.addZero(min)+'分</span><span class="sec">'+this.addZero(sec)+'秒</span><span class="milli">'+this.addZero(milli)+'</span>';
-   this.elem.innerHTML = timer;
-   tid = setTimeout( function(){me.countDown();},10 );
-  }else{
-   this.elem.innerHTML = this.mes;
-   return;
-  }
- },addZero:function(num){ return ('0'+num).slice(-2); }
-}
-function CDT(){
- var tl = new Date('2017/11/4 00:00:00');
- var timer = new CountdownTimer('CDT',tl,'育英祭当日です！');
- timer.countDown();
-}
-window.onload=function(){
- CDT();
-
- // isotope functions
-  var $grid = new Isotope( '#grid', {
-    itemSelector: '.grid-item',
-    getSortData: {
-      name: '.wname parseInt',
-      category: '.wcate',
-      laboratory: '.wlabo',
+    function CountdownTimer(elm, tl, mes) {
+      this.initialize.apply(this, arguments);
     }
-  });
+    CountdownTimer.prototype = {
+      initialize: function(elm, tl, mes) {
+        this.elem = document.getElementById(elm);
+        this.tl = tl;
+        this.mes = mes;
+      },
+      countDown: function() {
+        var timer = '';
+        var today = new Date();
+        var day = Math.floor((this.tl - today) / (24 * 60 * 60 * 1000));
+        var hour = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+        var min = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / (60 * 1000)) % 60;
+        var sec = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 1000) % 60 % 60;
+        var milli = Math.floor(((this.tl - today) % (24 * 60 * 60 * 1000)) / 10) % 100;
+        var me = this;
 
-  // bind sort button click
-  $('.sort-by-button-group').on( 'click', 'button', function() {
-    var sortValue = $(this).attr('data-sort-value');
-    $grid.arrange({ sortBy: sortValue });
-  });
+        if ((this.tl - today) > 0) {
+          if (day) timer += '<span class="day">' + day + '<span id="smday">日</span></span>';
+          if (hour) timer += '<span class="hour">' + hour + '時間</span>';
+          timer += '<span class="min">' + this.addZero(min) + '分</span><span class="sec">' + this.addZero(sec) + '秒</span><span class="milli">' + this.addZero(milli) + '</span>';
+          this.elem.innerHTML = timer;
+          tid = setTimeout(function() { me.countDown(); }, 10);
+        } else {
+          this.elem.innerHTML = this.mes;
+          return;
+        }
+      },
+      addZero: function(num) { return ('0' + num).slice(-2); }
+    }
 
-  // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
+    function CDT() {
+      var tl = new Date('2017/11/4 00:00:00');
+      var timer = new CountdownTimer('CDT', tl, '育英祭当日です！');
+      timer.countDown();
+    }
+    window.onload = function() {
+      CDT();
+
+      // isotope functions
+      var $grid = new Isotope('#grid', {
+        itemSelector: '.grid-item',
+        getSortData: {
+          name: '.wname parseInt',
+          category: '.wcate',
+          laboratory: '.wlabo',
+        }
+      });
+
+      // bind sort button click
+      $('.sort-by-button-group').on('click', 'button', function() {
+        var sortValue = $(this).attr('data-sort-value');
+        $grid.arrange({ sortBy: sortValue });
+      });
+
+      // change is-checked class on buttons
+      $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
+      });
+      // end of isotope functions
+    }
+    </script>
+    <script>
+    ! function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    </script>
+    <script src="{{root}}assets/js/app.js"></script>
+    <script type="text/javascript">
+    if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+      var s = skrollr.init();
+    }
+    </script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        centeredSlides: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        speed: 1000
     });
-  });
-  // end of isotope functions
-}
-</script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-<script src="{{root}}assets/js/app.js"></script>
-<script type="text/javascript">
-  if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-    var s = skrollr.init();
-  }
-</script>
+    </script>
     <!-- unused -->
     <!-- <script src="{{root}}assets/js/swiper.jquery.js"></script>
     <script src="{{root}}assets/js/swiper.min.js"></script> -->
   </body>
+
 </html>
