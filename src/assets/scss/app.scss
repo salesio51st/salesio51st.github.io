@@ -575,7 +575,13 @@ body>#loadwrap {
 .content {
     margin: 25% auto;
 }
-
+a{
+	color: black !important;
+}
+.accordion-title, .accordion-content, .accordion-item{
+	border: none;
+	transition: all ease 0.3s;
+}
 .midashi {
     transform: rotate(-5deg);
     text-align: left; // background-color: $main;
