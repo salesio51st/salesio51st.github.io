@@ -119,19 +119,25 @@ $thinit: "Metro Nova Thinitalic";
 $mainit: 'Metro Nova Lightitalic';
 $boldit: 'Metro Nova Bolditalic';
 $bookjp: "A-OTF UD新ゴNT Pro L",
+"A-OTF UD Shin Go NT Pro L",
 "FOT-ロダンNTLG Pro L",
+"FOT-RodinNTLG Pro L" ,
 "ヒラギノ角ゴシック W2",
 "ヒラギノ角ゴ ProN W3",
 "Hiragino Kaku Gothic ProN W3",
+"Hiragino Sans W2",
 "游ゴシック",
 YuGothic,
 "メイリオ",
 Meiryo,
 sans-serif;
 $boldjp: "A-OTF UD新ゴNT Pro DB",
+"A-OTF UD Shin Go NT Pro DB",
 "FOT-ロダンNTLG Pro DB",
+"FOT-RodinNTLG Pro DB" ,
 "ヒラギノ角ゴシック W5",
 "ヒラギノ角ゴ ProN W6",
+"Hiragino Sans W5",
 "Hiragino Kaku Gothic ProN W6",
 "游ゴシック",
 YuGothic,
@@ -1176,6 +1182,7 @@ a{
     	color: #AAA;
     	font-size: 1em;
     	font-family: $boldeg, $boldjp;
+    	font-weight: 700;
     }
     .colday-gly{
     	color: #AAA;
