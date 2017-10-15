@@ -1157,7 +1157,49 @@ a{
     background-image: url("../img/pattern/35.svg");
     background-size: cover;
 }
-
+.col{
+	margin: 1.5rem auto auto;
+	height: 100px;
+	cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 2px;
+    position: relative;
+    &:hover {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    .coltitle-gly{
+    	color: #AAA;
+    	font-size: 0.8em;
+    	margin-bottom: 0;
+    }
+    .colsub-gly{
+    	color: #AAA;
+    	font-size: 1em;
+    	font-family: $boldeg, $boldjp;
+    }
+    .colday-gly{
+    	color: #AAA;
+    	font-size: 0.6em;
+    	position: absolute;
+    	left: 3px;
+    	bottom: 0;
+    	margin-bottom: 0;
+    }
+}
+.gly{
+	background-color: $main;
+	cursor: default;
+	&:hover {
+        box-shadow: none;
+    }
+}
+.gly-line{
+	border: 1px $main solid;
+	cursor: default;
+	&:hover {
+        box-shadow: none;
+    }
+}
 // skrollr
 // html, body {
 // 　width:100%;
