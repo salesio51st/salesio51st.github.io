@@ -504,7 +504,7 @@ body>#loadwrap {
         z-index: -1;
     }
     .row {
-        box-sizing: boder-box;
+        box-sizing: border-box;
         width: 100%;
         max-width: auto;
         height: 100%;
@@ -981,7 +981,17 @@ a{
         }
     }
 }
-
+.bshare{
+	border: 1px solid;
+	font-family: $mainit, sans-serif;
+	font-weight: 700;
+	padding: 3px;
+	margin-left: 10px;
+	transition: 0.3s ease all;
+	&:hover{
+		background-color: $main;
+	}
+}
 #map {
     height: 30rem;
     width: 100%;
@@ -1167,7 +1177,6 @@ a{
 	height: 100px;
 	cursor: pointer;
     transition: all 0.3s ease;
-    padding: 2px;
     position: relative;
     &:hover {
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1185,6 +1194,25 @@ a{
     }
     .colday-gly{
     	color: #AAA;
+    	font-size: 0.6em;
+    	position: absolute;
+    	left: 3px;
+    	bottom: 0;
+    	margin-bottom: 0;
+    }
+    .coltitle{
+    	font-size: 0.8em;
+    	margin-bottom: 0;
+    }
+    .colsub{
+    	font-size: 1em;
+    	font-family: $boldeg, $boldjp;
+    	font-weight: 700;
+    	span{
+    		font-size: 0.7em;
+    	}
+    }
+    .colday{
     	font-size: 0.6em;
     	position: absolute;
     	left: 3px;
@@ -1243,13 +1271,16 @@ a{
 	transform: skewY(-5deg) translateX(1rem);
 	margin-bottom: 4rem;
 	font-weight: 700;
+	span{
+		font-size: 0.7em;
+	}
 }
 .coldetail{
 	text-align: right;
 	font-size: 1em;
-	color: #eee;
+	color: #ddd;
 	font-family: $boldeg;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ddd;
 }
 @media screen and (max-width: 560px) {
     .coltitleeg{
@@ -1262,6 +1293,37 @@ a{
     	margin-bottom: 1rem;
     }
 }
+.ovsc{
+	overflow: scroll;
+	height: calc(100vh - 200px);
+}
+.profilebox{
+	font-size: 0.9em;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	margin-top: 1rem;
+	padding: 5px;
+}
+.pi{
+	background-image: url(../img/pi.svg);
+	background-position: center;
+	background-size: cover;
+	background-color: #108B96;
+}
+.si{
+	background-image: url(../img/si.svg);
+	background-position: center;
+	background-size: cover;
+	background-color: $main;
+}
+.opawh{
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	opacity: 0.7;
+	padding: 3px;
+}
+
 // skrollr
 // html, body {
 // 　width:100%;

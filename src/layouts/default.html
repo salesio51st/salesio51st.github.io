@@ -14,9 +14,10 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Prinzhorn/skrollr-ie@1.0.3/dist/skrollr.ie.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="shortcut icon" href="assets/img/favicon.jpg"/>
+  <link rel="shortcut icon" href="assets/img/favicon.jpg" />
 
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# school: http://ogp.me/ns/school#">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -145,11 +146,16 @@ function stopload(){
     }
     </script>
     <script>
-    ! function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0],
-        p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s);
+    ! function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
         js.id = id;
         js.src = p + '://platform.twitter.com/widgets.js';
-        fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'twitter-wjs');
     </script>
     <script src="{{root}}assets/js/app.js"></script>
     <script type="text/javascript">
@@ -159,14 +165,32 @@ function stopload(){
     </script>
     <script>
     var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        centeredSlides: true,
-        autoplay: 3000,
-        autoplayDisableOnInteraction: false,
-        loop: true,
-        speed: 1000
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      centeredSlides: true,
+      autoplay: 3000,
+      autoplayDisableOnInteraction: false,
+      loop: true,
+      speed: 1000
     });
+    </script>
+    <script>
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) { return pair[1]; }
+      }
+      return (false);
+    }
+
+    if (window.location.search) {
+     var showModal = getQueryVariable('showCol1');
+     if (showModal == 'yes') {
+          $('#col1').foundation('reveal', 'open');
+     }
+}
     </script>
     <!-- unused -->
     <!-- <script src="{{root}}assets/js/swiper.jquery.js"></script>
