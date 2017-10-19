@@ -782,6 +782,7 @@ a{
     // 	background-size: 200% auto;
     position: relative;
     display: inline-block;
+    cursor: pointer;
     &::after {
         position: absolute;
         bottom: 0;
@@ -1337,7 +1338,14 @@ a{
 .skrollr-mobile .skrollable {
     position: absolute;
 }
-
+.patternbox{
+	height:20rem;
+	margin-top: 1rem;
+}
+#box22{
+	background: url(../img/pattern/22.svg);
+		background-size: cover;
+}
 // .skrollable .skrollable{
 // 	position: absolute;
 // }
