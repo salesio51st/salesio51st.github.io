@@ -1307,14 +1307,14 @@ a{
 .pi{
 	background-image: url(../img/pi.svg);
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	background-color: #108B96;
 }
 .si{
 	background-image: url(../img/si.svg);
 	background-position: center;
-	background-size: cover;
-	background-color: $main;
+	background-size: contain;
+	background-color: #D24D8A;
 }
 .opawh{
 	height: 100%;
