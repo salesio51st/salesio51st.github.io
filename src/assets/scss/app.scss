@@ -1339,12 +1339,14 @@ a{
     position: absolute;
 }
 .patternbox{
-	height:20rem;
+	height:200px;
 	margin-top: 1rem;
+	width: 100%;
 }
 #box22{
 	background: url(../img/pattern/22.svg);
 		background-size: cover;
+		background-position: center;
 }
 // .skrollable .skrollable{
 // 	position: absolute;
