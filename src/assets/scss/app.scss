@@ -154,6 +154,8 @@ sans-serif;
 
 #loadwrap {
 	zoom: 1;
+	display: none;
+	margin-bottom: 95%;
     #center {
         width: 50%;
         position:fixed;
@@ -168,11 +170,9 @@ sans-serif;
         }
     }
 }
-
-#wrap {
-    margin-top: 100%;
+#wrap{
+	margin-top: 5%;
 }
-
 @media screen and (max-width: 1080px) {
     #center {
         width: 70% !important;
