@@ -154,11 +154,9 @@ sans-serif;
 
 #loadwrap {
 	zoom: 1;
-	display: none;
-	margin-bottom: 95%;
     #center {
         width: 50%;
-        position:fixed;
+        position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -171,7 +169,7 @@ sans-serif;
     }
 }
 #wrap{
-	margin-top: 5%;
+	margin-top: 100%;
 }
 @media screen and (max-width: 1080px) {
     #center {
@@ -914,7 +912,7 @@ a{
 }
 #jisyu{
 	font-size:  1.1em;
-	position: fixed;
+	position: absolute;
 	bottom: 20px;
 	left: 30px;
 }
