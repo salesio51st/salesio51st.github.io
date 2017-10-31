@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/layzr.js/2.2.2/layzr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/Prinzhorn/skrollr-ie@1.0.3/dist/skrollr.ie.min.js"></script>
@@ -85,6 +86,16 @@ function stopload(){
   $('#anime').delay(600).fadeOut(300);
 }
 </script> -->
+<script>const instance = Layzr()
+
+// start it up, when the DOM is ready
+
+document.addEventListener('DOMContentLoaded', event => {
+  instance
+    .update()           // track initial elements
+    .check()            // check initial elements
+    .handlers(true)     // bind scroll and resize handlers
+})</script>
     <script language="JavaScript" type="text/javascript">
     function CountdownTimer(elm, tl, mes) {
       this.initialize.apply(this, arguments);
