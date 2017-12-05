@@ -1321,7 +1321,9 @@ a{
 	background-color: rgba(255,255,255,0.7);
 	padding: 3px;
 }
-
+.text-gray{
+	color: gray;
+}
 // skrollr
 // html, body {
 // 　width:100%;
@@ -1355,6 +1357,14 @@ a{
 	background: url(../img/pattern/7.svg);
 		background-size: cover;
 		background-position: center;
+}
+#box06{
+	background: url(../img/pattern/6.svg);
+		background-size: cover;
+		background-position: center;
+}
+.hidden{
+	display: none;
 }
 // .skrollable .skrollable{
 // 	position: absolute;
