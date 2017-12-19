@@ -1359,7 +1359,12 @@ a{
 		background-position: center;
 }
 #box06{
-	background: url(../img/pattern/6.svg);
+    background: url(../img/pattern/6.svg);
+        background-size: cover;
+        background-position: center;
+}
+#box33{
+	background: url(../img/pattern/33.svg);
 		background-size: cover;
 		background-position: center;
 }
