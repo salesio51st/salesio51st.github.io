@@ -1371,6 +1371,13 @@ a{
 .hidden{
 	display: none;
 }
+#posterimage{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.borderimage{
+    border: 2px solid $main;
+}
 // .skrollable .skrollable{
 // 	position: absolute;
 // }
